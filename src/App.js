@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import WageForm from './components/WageForm';
+import IncList from './components/IncList';
 
 function App() {
   const [income, setIncome] = useState([]);
@@ -27,6 +28,7 @@ function App() {
       <Header totalIncome={totalIncome} />
       <WageForm income={income} setIncome={setIncome} />
       {/* {income.length > 0 ? income[0].desc : ''} */}
+      <IncList income={income} setIncome={setIncome} />
     </div>
   );
 }
