@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import Header from './components/Header';
 import WageForm from './components/WageForm';
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header totalIncome={totalIncome} />
-      <WageForm />
+      <WageForm income={income} setIncome={setIncome} />
     </div>
   );
 }
