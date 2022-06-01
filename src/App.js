@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <Header totalIncome={totalIncome} />
       <WageForm income={income} setIncome={setIncome} />
+      {income.length > 0 ? income[0].desc : ''}
     </div>
   );
 }
