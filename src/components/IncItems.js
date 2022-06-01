@@ -12,7 +12,7 @@ function IncItems({ income, index, removeIncome }) {
 
   return (
     <div className="income-item">
-      <button classNAme="remove-item" onClick={() => removeHandle(index)}>
+      <button className="remove-item" onClick={() => removeHandle(index)}>
         X
       </button>
       <div className="desc">{income.desc}</div>
